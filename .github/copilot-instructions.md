@@ -66,3 +66,8 @@ assets/
 - Keep the MCP server stateless and read-only.
 - Validate changes locally before pushing.
 
+## Contentful
+
+The content comes from Contentful, and is exported to `assets/content/` using a custom export script.
+When reviewing and updating content, use the tools of the `contentful-mcp` MCP server.
+The space id is `1xrzrik78qmb` and the environment is `master`.
