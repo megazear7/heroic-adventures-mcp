@@ -1,0 +1,8 @@
+{
+  "name": "heroic-adventures-mcp-function",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "static-mcpify": "^1.0.2"
+  }
+}

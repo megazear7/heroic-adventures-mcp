@@ -1,5 +1,5 @@
 {
-  "contentType": "skill",
+  "contentType": "ruleReference",
   "tools": [
     {
       "name": "content",
