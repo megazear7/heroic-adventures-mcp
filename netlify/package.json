@@ -3,6 +3,6 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "static-mcpify": "^1.0.3"
+    "static-mcpify": "^1.1.0"
   }
 }
