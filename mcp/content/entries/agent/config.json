@@ -1,0 +1,18 @@
+{
+  "contentType": "ruleReference",
+  "filters": [
+    {
+      "field": "category",
+      "operator": "equals",
+      "value": "agent > instruction"
+    }
+  ],
+  "tools": [
+    {
+      "name": "content",
+      "fields": [
+        "content"
+      ]
+    }
+  ]
+}
