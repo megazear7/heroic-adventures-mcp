@@ -7,12 +7,9 @@
       "value": "item > shield"
     }
   ],
-  "tools": [
-    {
-      "name": "content",
-      "fields": [
-        "content"
-      ]
-    }
-  ]
+  "defaultTool": {
+    "fields": [
+      "content"
+    ]
+  }
 }

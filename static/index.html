@@ -327,17 +327,16 @@ url = "https://mcp.heroicadventures.app/mcp"</pre>
   <section class="section tools-section">
     <div class="container">
       <h2 class="section-title">Available Tools</h2>
-      <p class="section-subtitle">Once connected, your AI automatically gets access to these tool categories:</p>
+      <p class="section-subtitle">Once connected, your AI gets a mix of direct content tools and category-level default tools. This deployment exposes the commands below today:</p>
       <div class="tools-grid">
 
         <div class="tool-card">
           <div class="tool-header">
             <h3>📜 Chapters</h3>
           </div>
-          <p>All 12 chapters of the rulebook — from Introduction to the Monster Manual. Full text, searchable by your AI.</p>
+          <p>All 12 chapters of the rulebook — from Introduction to the Monster Manual. Chapter lookups currently use the dedicated content tool.</p>
           <div class="tool-commands">
             <code>list_chapter</code>
-            <code>get_chapter</code>
             <code>get_chapter_content</code>
           </div>
         </div>
@@ -346,10 +345,9 @@ url = "https://mcp.heroicadventures.app/mcp"</pre>
           <div class="tool-header">
             <h3>⚖️ Rules</h3>
           </div>
-          <p>17 thematic rule summaries covering combat, spells, equipment, leveling, mass battle, and more.</p>
+          <p>17 thematic rule summaries covering combat, spells, equipment, leveling, mass battle, and more. Rules are exposed through the dedicated content tool.</p>
           <div class="tool-commands">
             <code>list_rule</code>
-            <code>get_rule</code>
             <code>get_rule_content</code>
           </div>
         </div>
@@ -358,11 +356,10 @@ url = "https://mcp.heroicadventures.app/mcp"</pre>
           <div class="tool-header">
             <h3>🛠️ Skills</h3>
           </div>
-          <p>17 ready-made skill templates — character creation, encounter building, session prep, treasure drops, and more.</p>
+          <p>17 ready-made skill templates — character creation, encounter building, session prep, treasure drops, and more. This category is configured with a default tool for faster access.</p>
           <div class="tool-commands">
-            <code>list_skill</code>
-            <code>get_skill</code>
-            <code>get_skill_content</code>
+            <code>list_agent-skill</code>
+            <code>get_agent-skill</code>
           </div>
         </div>
 
@@ -370,11 +367,10 @@ url = "https://mcp.heroicadventures.app/mcp"</pre>
           <div class="tool-header">
             <h3>🎭 Agents</h3>
           </div>
-          <p>5 specialized AI personas — Heroic GM, Rules Librarian, Character Builder, Encounter Designer, and Campaign Architect.</p>
+          <p>5 specialized AI personas — Heroic GM, Rules Librarian, Character Builder, Encounter Designer, and Campaign Architect. Agent instructions are available through the category default tool.</p>
           <div class="tool-commands">
             <code>list_agent</code>
             <code>get_agent</code>
-            <code>get_agent_content</code>
           </div>
         </div>
 

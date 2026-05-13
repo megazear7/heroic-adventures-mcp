@@ -7,12 +7,9 @@
       "value": "flaw"
     }
   ],
-  "tools": [
-    {
-      "name": "content",
-      "fields": [
-        "content"
-      ]
-    }
-  ]
+  "defaultTool": {
+    "fields": [
+      "content"
+    ]
+  }
 }

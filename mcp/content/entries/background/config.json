@@ -7,12 +7,9 @@
       "value": "background"
     }
   ],
-  "tools": [
-    {
-      "name": "content",
-      "fields": [
-        "content"
-      ]
-    }
-  ]
+  "defaultTool": {
+    "fields": [
+      "content"
+    ]
+  }
 }

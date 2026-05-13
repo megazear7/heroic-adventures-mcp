@@ -4,7 +4,7 @@
     {
       "field": "category",
       "operator": "equals",
-      "value": "feature"
+      "value": "monster-stats"
     }
   ],
   "defaultTool": {

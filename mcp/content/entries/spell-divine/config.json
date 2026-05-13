@@ -7,12 +7,9 @@
       "value": "spell > divine"
     }
   ],
-  "tools": [
-    {
-      "name": "content",
-      "fields": [
-        "content"
-      ]
-    }
-  ]
+  "defaultTool": {
+    "fields": [
+      "content"
+    ]
+  }
 }

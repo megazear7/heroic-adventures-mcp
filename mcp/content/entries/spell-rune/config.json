@@ -7,12 +7,9 @@
       "value": "spell > rune"
     }
   ],
-  "tools": [
-    {
-      "name": "content",
-      "fields": [
-        "content"
-      ]
-    }
-  ]
+  "defaultTool": {
+    "fields": [
+      "content"
+    ]
+  }
 }
