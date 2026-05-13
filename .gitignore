@@ -4,6 +4,10 @@ node_modules
 .DS_Store
 .env
 
+mcp/content/assets/*
+mcp/content/assets/**/*
+mcp/content/entries_old/*
+mcp/content/entries_old/**/*
 mcp/content/entries/*
 mcp/content/entries/**/*
 !mcp/content/entries/**/

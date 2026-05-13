@@ -1,0 +1,18 @@
+{
+  "contentType": "ruleReference",
+  "filters": [
+    {
+      "field": "category",
+      "operator": "equals",
+      "value": "item > weapon"
+    }
+  ],
+  "tools": [
+    {
+      "name": "content",
+      "fields": [
+        "content"
+      ]
+    }
+  ]
+}

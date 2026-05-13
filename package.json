@@ -1,28 +1,20 @@
 {
-  "name": "heroic-adventures-assistant",
+  "name": "heroic-adventures-mcp",
   "version": "1.0.0",
   "description": "An MCP server that serves Heroic Adventures 2nd Edition rulebook content via dynamically generated tools. Deployed on Netlify.",
   "main": "index.js",
   "scripts": {
-    "test": "node scripts/test-mcp.js",
-    "build": "smcp build --output assets",
-    "start": "netlify dev --no-open",
-    "describe-images": "node scripts/describe-images.js"
+    "build": "smcp build --output mcp",
+    "start": "netlify dev --no-open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^25.7.0",
-    "concurrently": "^9.1.0",
-    "http-server": "^14.1.1",
     "netlify-cli": "^24.0.0",
-    "pdf-lib": "^1.17.1"
+    "static-mcpify": "^1.0.3"
   },
   "dependencies": {
-    "@netlify/functions": "^5.2.0",
-    "dotenv": "^16.6.1",
-    "openai": "^4.103.0",
-    "static-mcpify": "^1.0.0"
   }
 }
