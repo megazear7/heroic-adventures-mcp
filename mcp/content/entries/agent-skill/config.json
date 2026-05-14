@@ -4,7 +4,7 @@
     {
       "field": "category",
       "operator": "equals",
-      "value": "item > weapon"
+      "value": "agent > skill"
     }
   ],
   "defaultTool": {
