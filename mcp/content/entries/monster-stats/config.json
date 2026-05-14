@@ -7,7 +7,11 @@
       "value": "monster-stats"
     }
   ],
+  "listTool": {
+    "description": "List all available monster status, optionally filtering by title. All titles are in the format 'level-1-2' where the level range is always only two levels starting with an even number and going from levels-1-2 and going to levels-29-30."
+  },
   "defaultTool": {
+    "description": "Get the monster stats content for a given title. All titles are in the format 'level-1-2' where the level range is always only two levels starting with an even number and going from levels-1-2 and going to levels-29-30.",
     "fields": [
       "content"
     ]

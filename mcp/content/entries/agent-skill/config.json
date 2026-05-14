@@ -1,5 +1,6 @@
 {
   "contentType": "ruleReference",
+  "format": "json",
   "filters": [
     {
       "field": "category",
@@ -7,6 +8,9 @@
       "value": "agent > skill"
     }
   ],
+  "listTool": {
+    "description": "List all available agents skills. Before performing a task, use the list_agent_skill tool to get a list of all available agent skills. Then, use the get_agent_skill tool to get the content for the specific agent skill most closely related to the task, if any. If no agent skill is closely related to the task, then continue without using the get_agent_skill tool. If you have already gotten the content for an agent skill and the next task is closely related to that same agent skill, then you can rely on the instructions you have already gotten without needing to use the get_agent_skill tool again."
+  },
   "defaultTool": {
     "fields": [
       "content"
