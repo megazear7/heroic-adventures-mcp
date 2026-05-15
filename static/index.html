@@ -50,6 +50,16 @@
         <a href="#setup" class="btn btn-primary">Get Started</a>
         <a href="#features" class="btn btn-outline">See What It Does</a>
       </div>
+      <div class="hero-connection">
+        <p class="hero-connection-label">MCP Server URL</p>
+        <div class="code-block hero-url-block">
+          <div class="code-header">
+            <span>https://mcp.heroicadventures.app/mcp</span>
+            <button class="copy-btn" data-copy="hero-server-url">Copy</button>
+          </div>
+          <pre id="hero-server-url">https://mcp.heroicadventures.app/mcp</pre>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -126,6 +136,31 @@
             <h3>Ask it anything</h3>
             <p>Build characters, design encounters, look up rules, generate adventures — all through natural conversation.</p>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommended Instructions -->
+  <section class="section recommended-instructions">
+    <div class="container">
+      <h2 class="section-title">Recommended Client Instructions</h2>
+      <p class="section-subtitle">If your MCP-enabled AI app lets you provide global instructions alongside connected servers, use this guidance so the assistant starts with the right Heroic Adventures workflow.</p>
+      <div class="instructions-layout">
+        <div class="instructions-copy">
+          <h3>What to Tell Your AI</h3>
+          <p>These instructions teach the client to prime itself with the most important chapters, use the server tools in a sensible order, and keep encounter generation aligned with the built-in encounter skill.</p>
+        </div>
+        <div class="code-block instructions-block">
+          <div class="code-header">
+            <span>Recommended Instructions</span>
+            <button class="copy-btn" data-copy="recommended-instructions">Copy</button>
+          </div>
+          <pre id="recommended-instructions">Always use the get_chapter tool and get the contents of the "introduction" and "gameplay" chapters if you have not already so that you know what the game is about and you know the rules of the game.
+
+Before performing ANY task relating to the rules of Heroic Adventures, you must perform tools in the following order so that you know the rules of Heroic Adventures. For the list tools, provide no argument. For the get tools, provide the title argument based on the result of the list tools, getting the entries that seem most relevant to the task you have been given. If you have ALREADY retrieved content for the same or similar task, then you do not need to use these tools again. list_agent -&gt; get_agent -&gt; list_agent_skill -&gt; get_agent_skill -&gt; list_chapter -&gt; get_chapter.
+
+Always follow the encounter format provided by the make-encounter agent skill.</pre>
         </div>
       </div>
     </div>
