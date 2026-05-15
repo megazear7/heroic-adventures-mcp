@@ -17,5 +17,5 @@ export default async (req: Request, _context: Context): Promise<Response> => {
 
 export const config = {
   path: '/mcp',
-  includedFiles: ['../../mcp/content/**'],
+  includedFiles: ['../../mcp/content/**', '../../mcp/config.json'],
 };
