@@ -1,6 +1,7 @@
 {
   "source": "contentful",
   "instructions": [
+    "Always use the get_chapter tool and get the contents of the 'introduction' and 'gameplay' chapters if you have not already so that you know what the game is about and you know the rules of the game.",
     "Before performing ANY task relating to the rules of Heroic Adventures, you must perform tools in the following order so that you know the rules of Heroic Adventures. For the list tools, provide no argument. For the get tools, provide the title argument based on the result of the list tools, getting the entries that seem most relevant to the task you have been given. If you have ALREADY retrieved content for the same or similar task, then you do not need to use these tools again. list_agent -> get_agent -> list_agent_skill -> get_agent_skill -> list_chapter -> get_chapter"
   ]
 }
