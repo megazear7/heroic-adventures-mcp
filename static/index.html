@@ -39,8 +39,21 @@
 </head>
 <body>
 
+  <nav class="top-nav">
+    <div class="container nav-inner">
+      <a href="#top" class="nav-brand">Heroic Adventures MCP</a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#chat-demos">Chat Demos</a>
+        <a href="#integrations">Integrations</a>
+        <a href="#client-guides">Quick Start</a>
+        <a href="#stories">Stories</a>
+      </div>
+    </div>
+  </nav>
+
   <!-- Hero Section -->
-  <header class="hero">
+  <header class="hero" id="top">
     <div class="hero-glow"></div>
     <div class="container">
       <div class="hero-badge">MCP Server</div>
@@ -110,6 +123,40 @@
     </div>
   </section>
 
+  <!-- Chat Demos -->
+  <section id="chat-demos" class="section demos">
+    <div class="container">
+      <h2 class="section-title">Real Session Chat Demos</h2>
+      <p class="section-subtitle">See how players and GMs use Heroic Adventures MCP during play for <strong>rules lookup, spell details, and dice roll support</strong>.</p>
+      <div class="demo-grid">
+        <article class="demo-card">
+          <h3>📖 Rules Lookup (In Combat)</h3>
+          <div class="chat-log">
+            <p><strong>GM:</strong> "Does disengaging cancel attacks of opportunity?"</p>
+            <p><strong>Assistant:</strong> "From Combat Rules: yes, a successful disengage prevents opportunity attacks this turn."</p>
+            <p><strong>Assistant:</strong> "Use <code>get_rule_content</code> with <code>combat</code> for the full wording."</p>
+          </div>
+        </article>
+        <article class="demo-card">
+          <h3>✨ Spell Details (At the Table)</h3>
+          <div class="chat-log">
+            <p><strong>Player:</strong> "What does Flame Lance do at Level 4?"</p>
+            <p><strong>Assistant:</strong> "Flame Lance is a ranged spell attack that deals base fire damage plus scaling at higher caster levels."</p>
+            <p><strong>Assistant:</strong> "I can also list similar offensive spells for this level range."</p>
+          </div>
+        </article>
+        <article class="demo-card">
+          <h3>🎲 Dice + Rule Adjudication</h3>
+          <div class="chat-log">
+            <p><strong>GM:</strong> "Roll 2d20 keep highest for stealth, then apply nighttime penalty."</p>
+            <p><strong>Assistant:</strong> "Rolled: 7, 16 → keep 16. Night penalty -2. Final check: 14."</p>
+            <p><strong>Assistant:</strong> "Stealth target was 13, so the party succeeds unnoticed."</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- How It Works -->
   <section class="section how-it-works">
     <div class="container">
@@ -162,6 +209,40 @@ Before performing ANY task relating to the rules of Heroic Adventures, you must 
 
 Always follow the encounter format provided by the make-encounter agent skill.</pre>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="integrations" class="section integrations">
+    <div class="container">
+      <h2 class="section-title">Integration Demos with Other MCPs</h2>
+      <p class="section-subtitle">Combine Heroic Adventures MCP with your existing stack for campaign planning, notes, and live ops.</p>
+      <div class="integration-grid">
+        <article class="integration-card">
+          <h3>📝 Notion + Heroic Adventures</h3>
+          <p>Ask your AI to pull Heroic Adventures rules and publish a cleaned summary directly into your Notion campaign wiki.</p>
+        </article>
+        <article class="integration-card">
+          <h3>🗂️ Notes MCP + Session Prep</h3>
+          <p>Generate encounters with Heroic Adventures MCP, then save monster packs and treasure tables to your notes MCP automatically.</p>
+        </article>
+        <article class="integration-card">
+          <h3>📆 Calendar MCP + Story Arcs</h3>
+          <p>Turn AI-generated plot beats into scheduled sessions and reminders so your table stays on track between games.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="client-guides" class="section quick-guides">
+    <div class="container">
+      <h2 class="section-title">Quick-Start Client Guides</h2>
+      <p class="section-subtitle">Pick your preferred AI client and connect in under a minute.</p>
+      <div class="guide-grid">
+        <article class="guide-card"><h3>Claude</h3><p>Add the MCP URL in Settings → MCP Servers and start a new chat.</p></article>
+        <article class="guide-card"><h3>Cursor</h3><p>Place the server in <code>.cursor/mcp.json</code> and reload your window.</p></article>
+        <article class="guide-card"><h3>VS Code + Copilot</h3><p>Add to <code>.vscode/mcp.json</code> in your workspace settings.</p></article>
+        <article class="guide-card"><h3>Codex</h3><p>Add a <code>[mcp_servers.heroic-adventures]</code> entry in <code>config.toml</code>.</p></article>
       </div>
     </div>
   </section>
@@ -354,6 +435,27 @@ url = "https://mcp.heroicadventures.app/mcp"</pre>
           </div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <section id="stories" class="section stories">
+    <div class="container">
+      <h2 class="section-title">Player &amp; GM Stories</h2>
+      <p class="section-subtitle">How tables are using Heroic Adventures MCP as an online rulebook and game assistant.</p>
+      <div class="story-grid">
+        <blockquote class="story-card">
+          <p>"We stopped pausing sessions to flip through books. The assistant resolves rules in seconds."</p>
+          <cite>— Mara, Campaign GM</cite>
+        </blockquote>
+        <blockquote class="story-card">
+          <p>"Character creation became collaborative. New players ask questions naturally and get consistent answers."</p>
+          <cite>— Devin, Weekly Player</cite>
+        </blockquote>
+        <blockquote class="story-card">
+          <p>"Using Heroic Adventures MCP with Notion lets me draft lore and publish session recaps in one flow."</p>
+          <cite>— Riley, Worldbuilder</cite>
+        </blockquote>
       </div>
     </div>
   </section>

@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Observe feature cards, tool cards, steps, FAQ items
   const fadeElements = document.querySelectorAll(
-    '.feature-card, .tool-card, .step, .setup-step, .faq-item, .cta-content'
+    '.feature-card, .demo-card, .integration-card, .guide-card, .story-card, .tool-card, .step, .setup-step, .faq-item, .cta-content'
   );
 
   fadeElements.forEach((el, index) => {
@@ -97,6 +97,24 @@ document.addEventListener('DOMContentLoaded', () => {
     el.style.transition = `opacity 0.5s ease ${index % 6 * 0.08}s, transform 0.5s ease ${index % 6 * 0.08}s`;
     fadeObserver.observe(el);
   });
+
+  // --- Active Nav Link ---
+  const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+  const sectionIds = [...navLinks]
+    .map(link => link.getAttribute('href'))
+    .filter(href => href && href !== '#')
+    .map(href => document.querySelector(href))
+    .filter(Boolean);
+
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      const id = `#${entry.target.id}`;
+      navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === id));
+    });
+  }, { threshold: 0.3 });
+
+  sectionIds.forEach(section => navObserver.observe(section));
 });
 
 // CSS class for visible state (added by observer)
